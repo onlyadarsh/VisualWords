@@ -4,3 +4,6 @@ torchvision
 transformers
 Pillow
 opencv-python
+opencv-python-headless
+numpy
+scikit-learn
