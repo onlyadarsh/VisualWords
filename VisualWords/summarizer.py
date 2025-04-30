@@ -10,3 +10,10 @@ def summarize_captions(captions: list[str]) -> str:
     # summarize
     summary = summarizer(text, max_length=50, min_length=20, do_sample=False)
     return summary[0]['summary_text']
+
+
+import os
+from huggingface_hub import login
+
+# Login using the secret
+login(os.environ["HF_TOKEN"])
